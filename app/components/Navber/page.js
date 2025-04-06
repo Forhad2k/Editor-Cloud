@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CiMenuFries } from "react-icons/ci";
 import { TfiClose } from "react-icons/tfi";
@@ -30,6 +30,13 @@ export default function Navber() {
     { href: "/components/jewelry-retouch", icon: "/icons/Jewllery-Retouch.png", label: "Jewelry Retouch" },
     { href: "/components/model-retouch", icon: "/icons/Model-Retouch.png", label: "Model Retouch" },
   ];
+  const [isMobile, setIsMobile] = useState(false);
+  // Check if the device is mobile or not
+  // This will set the isMobile state based on the user agent
+  useEffect(() => {
+    const checkMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    setIsMobile(checkMobile);
+  }, []);
 
   return (
     <div>
@@ -50,13 +57,13 @@ export default function Navber() {
 
         {/* Navbar in Center */}
         <ul
-          className={"md:flex transition-all duration-1000 z-[10000] bg-white list-none absolute md:static top-11 left-0 p-5 " + (menuOpen ? "block" : "hidden")}
+          className={"md:flex h-screen md:h-auto transition-all duration-1000 z-[10000]  bg-white list-none absolute md:static top-0 left-0 p-5 " + (menuOpen ? "block" : "hidden")}
         >
           {/* Services Dropdown */}
           <li
-            onMouseEnter={() => setDropdown(true)}
-            onMouseLeave={() => setDropdown(false)}
-            onClick={() => setDropdown(!dropdown)}
+           onMouseEnter={!isMobile ? () => setDropdown(true) : undefined}
+           onMouseLeave={!isMobile ? () => setDropdown(false) : undefined}
+            onClick={isMobile ? () => setDropdown(!dropdown) : undefined}
             className="relative px-4 py-2"
           >
             <Link href="#">
@@ -69,8 +76,9 @@ export default function Navber() {
                 <ul className="m-2 ">
                   {/* Image Editing Dropdown */}
                   <li
-                    onMouseEnter={() => setImageEditingDropdown(true)}
-                    onMouseLeave={() => setImageEditingDropdown(false)}
+                     onMouseEnter={!isMobile ? () => setImageEditingDropdown(true) : undefined}
+                     onMouseLeave={!isMobile ? () => setImageEditingDropdown(false) : undefined}
+                      onClick={isMobile ? () => setImageEditingDropdown(!ImageEditingDropdown) : undefined}
                     className=" relative"
                   >
                     <Link href="/background-remove">
@@ -98,8 +106,9 @@ export default function Navber() {
                   </li>
                   {/* Video Editing */}
                   <li
-                    onMouseEnter={() => setvideoEditingDropdown(true)}
-                    onMouseLeave={() => setvideoEditingDropdown(false)}
+                     onMouseEnter={!isMobile ? () => setvideoEditingDropdown(true) : undefined}
+                     onMouseLeave={!isMobile ? () => setvideoEditingDropdown(false) : undefined}
+                      onClick={isMobile ? () => setvideoEditingDropdown(!videoEditingDropdown) : undefined}
                     className="relative"
                   >
                     <Link href="#">
@@ -122,8 +131,9 @@ export default function Navber() {
                     )}
                   </li>
                   {/* 3D & CGI */}
-                  <li onMouseEnter={() => setcgi3dDropdown(true)}
-                    onMouseLeave={() => setcgi3dDropdown(false)}
+                  <li onMouseEnter={!isMobile ? () => setcgi3dDropdown(true) : undefined}
+           onMouseLeave={!isMobile ? () => setcgi3dDropdown(false) : undefined}
+            onClick={isMobile ? () => setcgi3dDropdown(!cgi3dDropdown) : undefined}
                     className="relative"
                   >
                     <Link href="/3d-cgi">
@@ -152,9 +162,9 @@ export default function Navber() {
 
           {/* Pricing Dropdown */}
           <li
-            onMouseEnter={() => setPricingDropdown(true)}
-            onMouseLeave={() => setPricingDropdown(false)}
-            onClick={() => setPricingDropdown(!pricingDropdown)}
+             onMouseEnter={!isMobile ? () => setPricingDropdown(true) : undefined}
+             onMouseLeave={!isMobile ? () => setPricingDropdown(false) : undefined}
+              onClick={isMobile ? () => setPricingDropdown(!pricingDropdown) : undefined}
             className="relative px-4 py-2"
           >
             <Link href="#">
@@ -192,9 +202,9 @@ export default function Navber() {
           </li>
 
           <li
-            onMouseEnter={() => setAboutDropdown(true)}
-            onMouseLeave={() => setAboutDropdown(false)}
-            onClick={() => setAboutDropdown(!aboutDropdown)}
+             onMouseEnter={!isMobile ? () => setAboutDropdown(true) : undefined}
+             onMouseLeave={!isMobile ? () => setAboutDropdown(false) : undefined}
+              onClick={isMobile ? () => setAboutDropdown(!aboutDropdown) : undefined}
             className="relative px-4 py-2"
           >
             <Link href="#">
