@@ -78,7 +78,7 @@ export default function Navber() {
                   <li
                      onMouseEnter={!isMobile ? () => setImageEditingDropdown(true) : undefined}
                      onMouseLeave={!isMobile ? () => setImageEditingDropdown(false) : undefined}
-                      onClick={isMobile ? () => setImageEditingDropdown(!ImageEditingDropdown) : undefined}
+                      onClick={isMobile ? () => setImageEditingDropdown(!imageEditingDropdown) : undefined}
                     className=" relative"
                   >
                     <Link href="/background-remove">
