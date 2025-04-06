@@ -39,7 +39,7 @@ export default function Navber() {
   }, []);
 
   return (
-    <div>
+    <div className='text-black'>
       <div className="bg-white h-20 w-full flex justify-between items-center px-5 md:px-14 relative">
         {/* Logo on Left */}
         <Link href="/">
