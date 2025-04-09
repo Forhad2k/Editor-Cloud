@@ -81,11 +81,9 @@ export default function Navber() {
                       onClick={isMobile ? () => setImageEditingDropdown(!imageEditingDropdown) : undefined}
                     className=" relative"
                   >
-                    <Link href="/background-remove">
                       <span className=" flex items-center hover:bg-blue-600 p-2">
                       <Image src="/icons/clipping.png" alt="My Icon" width="50" height="50" className='p-3' />Image Editing 
                       </span>
-                    </Link>
                     {imageEditingDropdown && (
                          <div className="absolute left-full z-50 top-0 shadow-lg w-60">
                          <ul className="m-2 bg-white">
@@ -111,11 +109,9 @@ export default function Navber() {
                       onClick={isMobile ? () => setvideoEditingDropdown(!videoEditingDropdown) : undefined}
                     className="relative"
                   >
-                    <Link href="#">
                     <span className=" flex items-center hover:bg-blue-600 p-2">
                       <Image src="/icons/video-36x36.png" alt="My Icon" width="50" height="50" className='p-3' />Video Editing 
                       </span>
-                    </Link>
                     {videoEditingDropdown && (
                       <div className="absolute left-full top-0 z-50 shadow-lg w-56">
                         <ul className="m-2 bg-white">
@@ -167,11 +163,9 @@ export default function Navber() {
               onClick={isMobile ? () => setPricingDropdown(!pricingDropdown) : undefined}
             className="relative px-4 py-2"
           >
-            <Link href="#">
               <span className=" text-xl hover:text-blue-600 flex items-center gap-2">
                 Pricing { pricingDropdown ? <FaAngleUp /> : <FaChevronDown /> }
               </span>
-            </Link>
             {pricingDropdown && (
               <div className="md:absolute z-50 left-0 top-full bg-white  w-48">
                 <ul className="m-2 bg-white">

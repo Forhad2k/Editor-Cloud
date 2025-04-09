@@ -20,3 +20,16 @@ body {
   background: var(--background);
   font-family: var(--font-default), sans-serif;
 }
+/* styles/globals.css or create a custom CSS file */
+@keyframes infinite-scroll {
+ 
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 20s linear infinite;
+}
+
+
