@@ -32,6 +32,17 @@ export const metadata = {
     "photo editing",
     "AI tools",
     "image processing",
+    "video processing",
+    "image enhancement",
+    "video enhancement",
+    "AI image editing",
+    "AI video editing",
+    "AI background removal",
+    "AI photo editing",
+    "AI video processing",
+    "AI image processing",
+    "AI image enhancement",
+    "AI video enhancement",   
   ],
 };
 
