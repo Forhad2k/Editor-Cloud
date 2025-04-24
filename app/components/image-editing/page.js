@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 export default function ImageEditing() {
@@ -87,10 +88,11 @@ export default function ImageEditing() {
 
             <h2 className="text-2xl font-semibold mb-4">Total Price Image</h2>
             <p className="text-4xl font-bold text-green-500 mb-6">${total.toFixed(2)}</p>
-
+          <Link href="/components/contact-us">
             <button className="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600">
               GET STARTED
             </button>
+          </Link>
 
             <p className="text-sm text-gray-500 mt-4">
               For customizing pricing, please contact us!
