@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} antialiased bg-white`}
+        className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} antialiased bg-white `}
       >
         <Navber />
         {children}

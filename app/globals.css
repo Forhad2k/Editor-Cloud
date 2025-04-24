@@ -19,6 +19,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-default), sans-serif;
+  scroll-behavior: smooth;
 }
 /* styles/globals.css or create a custom CSS file */
 @keyframes infinite-scroll {

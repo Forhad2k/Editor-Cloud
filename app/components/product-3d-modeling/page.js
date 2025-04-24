@@ -3,9 +3,8 @@ import React from 'react';
 const Product3DModeling = () => {
     return (
         <div>
-            <h1>Product 3D Modeling</h1>
-            <p>Welcome to the Product 3D Modeling page.</p>
-            {/* Add your 3D modeling components and logic here */}
+            <h1 className='w-full h-screen flex justify-center items-center  text-[80px] text-bold'>Comming Soon</h1>
+           
         </div>
     );
 };

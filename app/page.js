@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="h-4/5 flex justify-around items-center p-8">
+      <section className="h-4/5 md:flex justify-around items-center p-8 scroll-smooth">
         <div className="max-w-lg">
           <h2 className="text-8xl w-8 font-bold">Editors Cloud Your Editing</h2>
           <h3 className="text-8xl text-gray-600 mt-2">Pathner</h3>
