@@ -32,7 +32,7 @@ export default function ImageEditing() {
   };
 
   return (
-    <div className="h-screen w-full">
+    <div>
       <div>
         <Image
           src="/Pricing/image-editing-pricing.png"
@@ -43,16 +43,16 @@ export default function ImageEditing() {
         />
       </div>
 
-      <div className="relative text-4xl text-bold mx-24 bottom-52 z-10">
+      <div className="relative text-xl md:text-4xl text-bold mx-12 md:mx-24 md:bottom-52 bottom-16 bott z-10">
         <h1 className="flex items-center">
           Image Editing<span className="text-white mx-4">Pricing</span>
         </h1>
       </div>
 
-      <div className="container mx-auto px-10 py-20">
-        <div className="flex justify-between">
+      <div className="container flex justify-center items-center min-h-screen m-auto px-10 py-20">
+        <div className="md:flex  justify-between ">
           {/* Left Section - Services */}
-          <div className="w-1/2 pr-10">
+          <div className="md:w-1/2 pr-10">
             <h2 className="text-2xl font-semibold mb-4">Select Services</h2>
             <div className="space-y-4">
               {services.map((service, index) => (
@@ -76,7 +76,7 @@ export default function ImageEditing() {
           </div>
 
           {/* Right Section - Price Information */}
-          <div className="w-1/2 pl-10">
+          <div className=" md:w-1/2 my-5 md:pl-10">
             <h2 className="text-2xl font-semibold mb-4">Base Price</h2>
             <p className="text-xl mb-6">
               <span className="font-semibold text-green-500">$0.40</span> <br />
@@ -88,7 +88,7 @@ export default function ImageEditing() {
             <h2 className="text-2xl font-semibold mb-4">Total Price Image</h2>
             <p className="text-4xl font-bold text-green-500 mb-6">${total.toFixed(2)}</p>
 
-            <button className="bg-green-500 text-white py-2 px-6 rounded-full hover:bg-green-600">
+            <button className="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600">
               GET STARTED
             </button>
 
