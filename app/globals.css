@@ -16,8 +16,8 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--background);
+  background: var(--foreground);
   font-family: var(--font-default), sans-serif;
   scroll-behavior: smooth;
 }

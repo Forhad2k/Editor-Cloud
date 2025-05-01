@@ -35,13 +35,10 @@ export default function ImageEditing() {
   return (
     <div>
       <div>
-        <Image
-          src="/Pricing/image-editing-pricing.png"
-          alt="Image Editing Pricing"
-          width={1000}
-          height={1000}
-          className="w-full object-cover"
-        />
+      <video>
+        <source src="/Pricing/video-editing-pricing.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       </div>
 
       <div className="relative text-xl md:text-4xl text-bold mx-12 md:mx-24 md:bottom-52 bottom-16 bott z-10">
