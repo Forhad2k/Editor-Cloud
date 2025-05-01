@@ -85,7 +85,7 @@ export default function Navber() {
                           {menuItems.map((item, index) => (
                             <li key={index}>
                               <Link href={item.href}>
-                                <span onClick={handleDropdownClick} className="flex items-center hover:text-green-600 p-2">
+                                <span onClick={handleDropdownClick} className="flex items-center hover:bg-black hover:text-white p-2">
                                   <Image src={item.icon} alt={`${item.label} Icon`} width={50} height={50} className="p-3" />
                                   {item.label}
                                 </span>
