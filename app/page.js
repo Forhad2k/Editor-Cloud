@@ -166,7 +166,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex-1 sm:w-1/2 lg:w-1/4 p-4">
-          <div className="bg-white h-full w-4/5 m-auto text-center my-auto py-12 p shadow-md rounded-lg ">
+          <div className="bg-white h-full w-4/5 m-auto text-center my-auto py-12  shadow-md rounded-lg ">
             <h3 className="text-3xl  md:text-5xl font-bold mb-4">99.5%</h3>
             <p className="text-green-600 text-xl mb-7">First Time Approval</p>
             <p className="text-black">
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
         </div>{" "}
         <div className="w-full flex-1 sm:w-1/2 lg:w-1/4 p-4">
-          <div className="bg-white h-full w-4/5 m-auto text-center my-auto py-12 p shadow-md rounded-lg ">
+          <div className="bg-white h-full w-4/5 m-auto text-center my-auto py-12  shadow-md rounded-lg ">
             <h3 className="text-3xl  md:text-5xl font-bold mb-4">1h</h3>
             <p className="text-green-600 text-xl mb-7">First Time Approval</p>
             <p className="text-black">

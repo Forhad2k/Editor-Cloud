@@ -71,11 +71,16 @@ export default function Navber() {
                 <ul className="m-2">
                   {/* Image Editing Dropdown */}
                   <li
-                    onMouseEnter={!isMobile ? () => setImageEditingDropdown(true) : undefined}
-                    onMouseLeave={!isMobile ? () => setImageEditingDropdown(false) : undefined}
-                    onClick={isMobile ? () => setImageEditingDropdown(!imageEditingDropdown) : undefined}
-                    className="relative"
-                  >
+  onMouseEnter={!isMobile ? () => setImageEditingDropdown(true) : undefined}
+  onMouseLeave={!isMobile ? () => setImageEditingDropdown(false) : undefined}
+  onClick={(e) => {
+    e.stopPropagation(); // Stop event propagation
+    if (isMobile) {
+      setImageEditingDropdown(!imageEditingDropdown); // Toggle dropdown for mobile
+    }
+  }}
+  className="relative"
+>
                     <span className="flex items-center hover:bg-black hover:text-white  p-2">
                       <Image src="/icons/clipping.png" alt="My Icon" width="50" height="50" className='p-3' />Image Editing
                     </span>
@@ -100,7 +105,12 @@ export default function Navber() {
                   <li
                     onMouseEnter={!isMobile ? () => setvideoEditingDropdown(true) : undefined}
                     onMouseLeave={!isMobile ? () => setvideoEditingDropdown(false) : undefined}
-                    onClick={isMobile ? () => setvideoEditingDropdown(!videoEditingDropdown) : undefined}
+                    onClick={(e) => {
+                      e.stopPropagation(); // Stop event propagation
+                      if (isMobile) {
+                        setvideoEditingDropdown(!videoEditingDropdown); // Toggle dropdown for mobile
+                      }
+                    }}
                     className="relative"
                   >
                     <span className="flex items-center hover:bg-black hover:text-white  p-2">
@@ -124,7 +134,12 @@ export default function Navber() {
                   <li
                     onMouseEnter={!isMobile ? () => setcgi3dDropdown(true) : undefined}
                     onMouseLeave={!isMobile ? () => setcgi3dDropdown(false) : undefined}
-                    onClick={isMobile ? () => setcgi3dDropdown(!cgi3dDropdown) : undefined}
+                    onClick={(e) => {
+                      e.stopPropagation(); // Stop event propagation
+                      if (isMobile) {
+                        setcgi3dDropdown(!cgi3dDropdown); // Toggle dropdown for mobile
+                      }
+                    }}
                     className="relative"
                   >
                     
