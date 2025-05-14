@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -11,8 +11,6 @@ const ContactUs = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,23 +23,33 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSuccessMessage('');
-    setErrorMessage('');
 
-    emailjs
-      .send('service_hmlk13j', 'template_j83tdcu', formData, 'rjiEo2WbwurVOiRFr')
-      .then(
-        (response) => {
-          setSuccessMessage('Message sent successfully!');
-          setFormData({ name: '', email: '', message: '' });
+    try {
+      const response = await fetch('https://editor-cloud.onrender.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        (error) => {
-          setErrorMessage('Failed to send message. Please try again later.');
-        }
-      )
-      .finally(() => {
-        setIsSubmitting(false); // Ensure submission state is reset regardless of success or failure
+        body: JSON.stringify(formData),
       });
+
+      const data = await response.json(); // Parse the JSON response
+
+      if (response.ok) {
+        toast.success("Your message has been sent successfully!");
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      } else {
+        toast.error(data.message || 'Failed to send your message. Please try again.');
+      }
+    } catch (error) {
+      toast.error('An error occurred. Please try again later.');
+    } finally {
+      setIsSubmitting(false); // Reset the submitting state
+    }
   };
 
   return (
@@ -57,16 +65,13 @@ const ContactUs = () => {
         />
       </div>
 
+      <ToastContainer position="top-right" autoClose={5000}  />
+
       <form
         onSubmit={handleSubmit}
         className="flex-1 items-center justify-center max-w-2xl md:mx-32 p-6 bg-white rounded-lg shadow-lg"
       >
-        <h1 className="text-center font-lexend font-semibold text-2xl">Contact Us</h1>
-        
-        {successMessage && (
-          <div className="text-green-600 mb-4">{successMessage}</div>
-        )}
-        {errorMessage && <div className="text-red-600 mb-4">{errorMessage}</div>}
+        <h1 className="text-center font-lexend font-semibold text-2xl mb-6">Contact Us</h1>
 
         <div className="mb-4">
           <label
@@ -124,8 +129,8 @@ const ContactUs = () => {
 
         <button
           type="submit"
-          disabled={isSubmitting}
           className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+          disabled={isSubmitting}
         >
           {isSubmitting ? 'Submitting...' : 'Submit'}
         </button>
