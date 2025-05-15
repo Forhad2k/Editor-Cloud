@@ -25,7 +25,7 @@ const ContactUs = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://editor-cloud.onrender.com', {
+      const response = await fetch('https://editor-cloud-main.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
