@@ -4,16 +4,8 @@
 
 :root {
   --font-default: var(--font-dm-sans); /* Set DM Sans as default */
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #ffffff;
-  }
-}
 
 body {
 

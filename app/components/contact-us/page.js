@@ -61,7 +61,7 @@ const ContactUs = () => {
           width={500}
           height={500}
           objectFit="cover"
-          className="h-4/5 w-auto"
+          className="h-auto w-auto"
         />
       </div>
 

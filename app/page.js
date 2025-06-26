@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <section className="h-4/5 md:flex justify-around items-center p-8 scroll-smooth bg-white text-black">
         <div className="max-w-lg">
-          <h2 className="text-8xl w-8 font-bold">Editors Cloud Your Editing</h2>
+          <h2 className="md:text-8xl text-6xl w-8 font-bold">Editors Cloud Your Editing</h2>
           <h3 className="text-8xl text-gray-600 mt-2">Pathner</h3>
           <p className="text-lg mt-4 mb-6">
             We’re empowering photo studio professionals with reliable image
