@@ -28,7 +28,7 @@ export default function Home() {
               fast, easy, and affordable. Start your free trial today.
             </p>
 
-            <Link href="/start">
+            <Link href="/components/contact-us">
               <button className="bg-black text-[#ADB5BD] hover:bg-[#ADB5BD] hover:text-black px-5 py-3 rounded-xl transition duration-300">
                 Get Started
               </button>
@@ -151,7 +151,7 @@ export default function Home() {
               difference between blending in and standing out.
             </p>
 
-            <Link href="/start">
+            <Link href="/components/contact-us">
               <button className="bg-black text-[#ADB5BD] hover:bg-[#ADB5BD] hover:text-black px-5 py-3 rounded-xl transition duration-300">
                 Get Started
               </button>
@@ -254,7 +254,7 @@ export default function Home() {
               help you in any way we can. Feel free to reach out.
             </p>
 
-            <Link href="/start">
+            <Link href="/components/contact-us">
               <button className="bg-black text-[#ADB5BD] hover:bg-[#ADB5BD] hover:text-black px-5 py-3 rounded-xl transition duration-300">
                 Get Started
               </button>
