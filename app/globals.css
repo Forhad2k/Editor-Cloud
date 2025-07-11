@@ -4,6 +4,8 @@
 
 :root {
   --font-default: var(--font-dm-sans); /* Set DM Sans as default */
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 
@@ -11,6 +13,8 @@ body {
 
   font-family: var(--font-default), sans-serif;
   scroll-behavior: smooth;
+  color: var(--foreground);
+  background-color: var(--background);
 }
 /* styles/globals.css or create a custom CSS file */
 @keyframes infinite-scroll {

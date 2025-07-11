@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { ToastContainer, toast } from 'react-toastify';
+import PulseLoader from 'react-spinners/PulseLoader';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -132,7 +133,9 @@ const ContactUs = () => {
           className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
           disabled={isSubmitting}
         >
-          {isSubmitting ? 'Submitting...' : 'Submit'}
+          {isSubmitting?
+      <PulseLoader color="#ffffff" size={10} />
+   : 'Submit'}
         </button>
       </form>
     </div>

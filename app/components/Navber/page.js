@@ -81,7 +81,7 @@ export default function Navber() {
   }}
   className="relative"
 >
-                    <span className="flex items-center hover:bg-black hover:text-white  p-2">
+                    <span className="flex items-center hover:opacity-75   p-2">
                       <Image src="/icons/clipping.png" alt="My Icon" width="50" height="50" className='p-3' />Image Editing
                     </span>
                     {imageEditingDropdown && (
@@ -90,7 +90,7 @@ export default function Navber() {
                           {menuItems.map((item, index) => (
                             <li key={index}>
                               <Link href={item.href}>
-                                <span onClick={handleDropdownClick} className="flex items-center hover:bg-black hover:text-white p-2">
+                                <span onClick={handleDropdownClick} className="flex items-center hover:opacity-75  p-2">
                                   <Image src={item.icon} alt={`${item.label} Icon`} width={50} height={50} className="p-3" />
                                   {item.label}
                                 </span>
@@ -113,7 +113,7 @@ export default function Navber() {
                     }}
                     className="relative"
                   >
-                    <span className="flex items-center hover:bg-black hover:text-white  p-2">
+                    <span className="flex items-center hover:opacity-75   p-2">
                       <Image src="/icons/video-36x36.png" alt="My Icon" width="50" height="50" className='p-3' />Video Editing
                     </span>
                     {videoEditingDropdown && (
@@ -121,7 +121,7 @@ export default function Navber() {
                         <ul className="m-2 bg-white">
                           <li>
                             <Link href="/components/post-production">
-                              <span onClick={handleDropdownClick} className="hover:bg-black hover:text-white  block p-2">
+                              <span onClick={handleDropdownClick} className="hover:opacity-75   block p-2">
                                 Post Production
                               </span>
                             </Link>
@@ -143,7 +143,7 @@ export default function Navber() {
                     className="relative"
                   >
                     
-                      <span className="flex items-center hover:bg-black hover:text-white  p-2">
+                      <span className="flex items-center hover:opacity-75   p-2">
                         <Image src="/icons/3D.png" alt="My Icon" width="50" height="50" className='p-3' />3D & CGI
                       </span>
                     
@@ -152,7 +152,7 @@ export default function Navber() {
                         <ul className="m-2 bg-white">
                           <li>
                             <Link href="/components/product-3d-modeling">
-                              <span  onClick={handleDropdownClick} className="hover:bg-black hover:text-white  block p-2">
+                              <span  onClick={handleDropdownClick} className="hover:opacity-75   block p-2">
                                 Product 3D Modeling
                               </span>
                             </Link>
@@ -181,17 +181,17 @@ export default function Navber() {
                 <ul className="m-2 bg-white">
                   <li>
                     <Link href="/components/image-editing">
-                      <span onClick={handleDropdownClick} className="hover:bg-black hover:text-white block p-4">Image Editing</span>
+                      <span onClick={handleDropdownClick} className="hover:opacity-75  block p-4">Image Editing</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/components/video-editing">
-                      <span onClick={handleDropdownClick} className="hover:bg-black hover:text-white  block p-4">Video Editing</span>
+                      <span onClick={handleDropdownClick} className="hover:opacity-75   block p-4">Video Editing</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/components/3d-cgi">
-                      <span onClick={handleDropdownClick} className="hover:bg-black hover:text-white  block p-4">3D & CGI</span>
+                      <span onClick={handleDropdownClick} className="hover:opacity-75   block p-4">3D & CGI</span>
                     </Link>
                   </li>
                 </ul>
@@ -216,22 +216,22 @@ export default function Navber() {
                 <ul className="m-2 bg-white">
                   <li>
                     <Link href="/components/about">
-                      <span onClick={handleDropdownClick} className="hover:bg-black hover:text-white  block p-2">About Us</span>
+                      <span onClick={handleDropdownClick} className="hover:opacity-75   block p-2">About Us</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/components/contact-us">
-                      <span onClick={handleDropdownClick} className="hover:bg-black hover:text-white  block p-2">Contact Us</span>
+                      <span onClick={handleDropdownClick} className="hover:opacity-75   block p-2">Contact Us</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/components/faq">
-                      <span onClick={handleDropdownClick} className="hover:bg-black hover:text-white  block p-2">FAQ</span>
+                      <span onClick={handleDropdownClick} className="hover:opacity-75   block p-2">FAQ</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="/components/career">
-                      <span onClick={handleDropdownClick} className="hover:bg-black hover:text-white  block p-2">Career</span>
+                      <span onClick={handleDropdownClick} className="hover:opacity-75   block p-2">Career</span>
                     </Link>
                   </li>
                 </ul>
