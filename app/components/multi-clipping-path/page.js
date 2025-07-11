@@ -55,7 +55,7 @@ export default function Home() {
       {/* title section end */}
 
       {/* Grid Section */}
-      <div className="grid w-[80%] pb-28 pt-16 h-auto items-center m-auto  md:grid-cols-3">
+      <div className="grid md:w-[80%] pb-28 pt-16 h-auto items-center m-auto  md:grid-cols-3">
         {/* Left Column */}
         <div className="flex flex-col gap-7">
           <div className="p-6 w-[80%]">
@@ -138,8 +138,8 @@ export default function Home() {
         </div>
       </div>
       {/* title section */}
-      <div className="text-center md:w-2/3 m-auto p-28">
-        <h1 className="text-5xl md:text-[80px] text-center font-bold">
+      <div className="text-center md:w-2/3 m-auto p-14  md:p-28">
+        <h1 className="text-5xl  md:text-[80px] text-center font-bold">
         OUR PREVIOUS <span className="text-[#ADB5BD]">WORK</span>
         </h1>
 
