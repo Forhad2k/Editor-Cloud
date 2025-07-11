@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </section>
       {/* End of Logo Animation Section */}
-      <div className="hero bg-base-200 min-h-screen flex items-center">
+      <div className="hero bg-[#F2F2F2] min-h-screen flex items-center">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 px-4 py-6 lg:px-6 lg:py-12">
           {/* Text Section */}
           <div className="flex-1  lg:text-right">
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </div>
       {/* end */}
-      <div className="hero bg-base-200 flex items-center">
+      <div className="hero bg-[#F2F2F2] flex items-center">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center gap-12 px-4 py-6 lg:px-6 lg:py-12">
           <div className="flex-1 flex justify-end">
             <Image
@@ -278,7 +278,7 @@ export default function Home() {
         </div>
       </div>
       {/* end */}
-      <div className="hero bg-base-200 flex items-center">
+      <div className="hero bg-[#F2F2F2] flex items-center">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center gap-12 px-4 py-6 lg:px-6 lg:py-12">
           <div className="flex-1 flex justify-end">
             <Image
