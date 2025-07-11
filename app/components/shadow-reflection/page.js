@@ -11,7 +11,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="hero bg-base-200 min-h-screen flex items-center">
+      <div className="hero bg-[#F2F2F2] min-h-screen flex items-center">
         
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 px-4 py-6 lg:px-6 lg:py-12">
         <div className="shadow-lg rounded-lg overflow-hidden hover:scale-105 transition duration-300"> 
@@ -110,7 +110,7 @@ export default function Home() {
 </div>
 
 
-      <div className="hero bg-base-200 min-h-screen flex items-center">
+      <div className="hero bg-[#F2F2F2] min-h-screen flex items-center">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 px-4 py-6 lg:px-6 lg:py-12">
           {/* Text Section */}
           <div className="flex-1 text-center lg:text-left">
@@ -205,7 +205,7 @@ export default function Home() {
 </div>
 {/* Grid Section End */}
 {/*section start */}
-<div className="hero bg-base-200 min-h-screen flex items-center">
+<div className="hero bg-[#F2F2F2] min-h-screen flex items-center">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 px-4 py-6 lg:px-6 lg:py-12">
           {/* Text Section */}
           <div className="flex-1 text-center lg:text-left">
@@ -238,7 +238,7 @@ export default function Home() {
       </div>
       {/*section End */}
       {/*section Start */}
-      <div className="hero bg-base-200 flex items-center">
+      <div className="hero bg-[#F2F2F2] flex items-center">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 px-4 py-6 lg:px-6 lg:py-6">
         <div className="flex-1 flex justify-center hover:scale-105 transition duration-300">
             <Image
@@ -264,7 +264,7 @@ export default function Home() {
         </div>
       </div>
       {/*section End */}
-      <div className="hero bg-base-200 h-screen flex items-center">
+      <div className="hero bg-[#F2F2F2] h-screen flex items-center">
         <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center justify-center gap-12 px-4 py-6 lg:px-6 lg:py-6">
         <div className="flex-1 flex justify-center hover:scale-105 transition duration-300">
             <Image
